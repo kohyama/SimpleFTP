@@ -6,11 +6,25 @@ An ActionScript3 class to put string to and get as string from files on FTP serv
 
 Put SimpleFTP.as in the same directory as your AS3 file.
 And `import SimpleFTP;` in your AS3 action.
+
 You may need to change `publish settings` of your swf.
 Select `publish settings` of `FILE` menu, select `Flash(.swf)`,
 open `ADVANCED` and set `local security` to `access only network`.
-And you may need to change `global security settings` to allow
-access to network files.
+To execute in another FlashPlayer, you may need to add your swf file
+to the trusted list of `global security settings` of your FlashPlayer.
+If you already loaded your swf, you may need to clear cache and reload yoru swf
+after changing `global serurity settings`.
+
+With Japanese version, 
+`ファイル` メニューの `パブリッシュ設定` で `Flash(.swf)` を選び,
+`詳細` を開いて `ローカルでの再生に関するセキュリティ` を
+`ネットワークにのみアクセスする` に設定します.
+他の FlashPlayer で実行するには, その FlashPlayer の
+`グローバルセキュリティ設定` の `信頼されている場所設定` で,
+実行しようとしている swf ファイルのパスを追加する必要があります.
+もし, 既に swf をロード済みなら, `グローバルセキュリティ設定` を変更
+した後に, FlashPlayer のキャッシュを削除し, swf を再ロードする必要が
+あるかもしれません.
 
 # To get a file
 
