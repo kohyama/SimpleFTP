@@ -95,8 +95,7 @@ STOR puttest.txt
 226 Closing data connection. 
 QUIT
 221 Service closing control connection.
-
-
+```
 
 # Example
 
