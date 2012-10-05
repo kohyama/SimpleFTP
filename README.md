@@ -6,6 +6,11 @@ An ActionScript3 class to put string to and get as string from files on FTP serv
 
 Put SimpleFTP.as in the same directory as your AS3 file.
 And `import SimpleFTP;` in your AS3 action.
+You may need to change `publish settings` of your swf.
+Select `publish settings` of `FILE` menu, select `Flash(.swf)`,
+open `ADVANCED` and set `local security` to `access only network`.
+And you may need to change `global security settings` to allow
+access to network files.
 
 # To get a file
 
@@ -22,7 +27,7 @@ where
 * `handler`: a function to receive response of a FTP session.
 Its type should be `function (res:String, contents:String):void`.
 
-To check if your session succeeded or not, to check if `res.substr(0,3) == "226"`,
+To check if your session succeeded or not, check if `res.substr(0,3) == "226"`,
 otherwise `SimpleFTP.get()` calls your `handler` with `res` the response from
 FTP server which is not equal to the expected.
 If `res.substr(0,3) == "226"`, `contents` is the contents of
@@ -44,7 +49,7 @@ where
 * `handler`: a function to receive response of a FTP session.
 Its type should be `function (res:String):void`.
 
-To check if your session succeeded or not, to check if `res.substr(0,3) == "226"`,
+To check if your session succeeded or not, check if `res.substr(0,3) == "226"`,
 otherwise `SimpleFTP.get()` calls your `handler` with `res` the response from
 FTP server which is not equal to the expected.
 If `res.substr(0,3) == "226"`, `contents` should saved as the file you specified.
