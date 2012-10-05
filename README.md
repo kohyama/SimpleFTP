@@ -12,7 +12,7 @@ Select `publish settings` of `FILE` menu, select `Flash(.swf)`,
 open `ADVANCED` and set `local security` to `access only network`.
 To execute in another FlashPlayer, you may need to add your swf file
 to the trusted list of `global security settings` of your FlashPlayer.
-If you already loaded your swf, you may need to clear cache and reload yoru swf
+If you already loaded your swf, you may need to clear cache and reload your swf
 after changing `global serurity settings`.
 
 With Japanese version, 
@@ -118,7 +118,7 @@ QUIT
 
 # Example
 
-Below is the fully example.
+Here is an example. 
 Assuming you have
 
 * host1TB as fl.controls.TextBox
