@@ -79,7 +79,7 @@ PASS ftp@ftp
 TYPE I
 200 Command okay.
 PASV
-227 Entering Passive Mode (192,168,27,94,15,215).
+227 Entering Passive Mode (ip1,ip2,ip3,ip4,port1,port2).
 (connect to ip1.ip2.ip3.ip4:port1*256+port2 with another socket. call it the data socket)
 RETR puttest.txt
 125 Data connection already open; transfer starting.
